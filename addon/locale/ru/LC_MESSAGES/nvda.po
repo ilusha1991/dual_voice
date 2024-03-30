@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Dual Voice for NVDA\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-30 20:03+0430\n"
-"PO-Revision-Date: 2024-01-03 11:29+0300\n"
+"PO-Revision-Date: 2024-03-30 08:51+0300\n"
 "Last-Translator: Danil Kostenkov <danilkostenkov38@gmail.com>\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -32,7 +32,7 @@ msgstr "&Посетить веб-сайт SAPI Unifier!"
 
 #: D:\~Work\github\dual_voice\addon\globalPlugins\dual_voice_globalPlugin\__init__.py:28
 msgid "Visit the &Dual Voice website!"
-msgstr "&Посетить web-сайт Dual Voice!"
+msgstr "&Посетить веб-сайт Dual Voice!"
 
 #: D:\~Work\github\dual_voice\addon\globalPlugins\dual_voice_globalPlugin\__init__.py:30
 msgid "&About the Dual voice for NVDA"
@@ -44,7 +44,7 @@ msgstr "Dual &voice"
 
 #: D:\~Work\github\dual_voice\addon\globalPlugins\dual_voice_globalPlugin\__init__.py:35
 msgid "About the Dual voice add-on for NVDA"
-msgstr "О Dual voice для NVDA"
+msgstr "О дополнении Dual voice для NVDA"
 
 #: D:\~Work\github\dual_voice\addon\globalPlugins\dual_voice_globalPlugin\dialogs.py:21
 msgid "The Dual Voice settings"
@@ -88,7 +88,7 @@ msgstr "&Громкость:"
 
 #: D:\~Work\github\dual_voice\addon\globalPlugins\dual_voice_globalPlugin\dialogs.py:94
 msgid "&Prioritize non-Latin text over Latin text."
-msgstr "Приоритет нелатинского текста над латинским текстом."
+msgstr "&Отдавать предпочтение нелатинскому тексту перед латинским."
 
 #: D:\~Work\github\dual_voice\addon\globalPlugins\dual_voice_globalPlugin\dialogs.py:99
 msgid "Read &numbers and punctuations based on surrounding text."
@@ -104,4 +104,6 @@ msgstr "Dual Voice для NVDA"
 
 #: D:\~Work\github\dual_voice\buildVars.py:20
 msgid "Read non-Latin and Latin texts using two separate voices."
-msgstr "Читать нелатинские и латинские тексты двумя отдельными голосами."
+msgstr ""
+"Это дополнение позволяет читать нелатинские и латинские тексты двумя "
+"отдельными голосами."
