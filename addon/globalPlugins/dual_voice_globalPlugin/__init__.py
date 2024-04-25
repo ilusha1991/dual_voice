@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # A part of Dual Voice for NVDA
-# Copyright (C) 2015-2021 Seyed Mahmood Taghavi Shahri
+# Copyright (C) 2015-2024 Seyed Mahmood Taghavi Shahri
 # https://mahmood-taghavi.github.io/dual_voice/
 # This file is covered by the GNU General Public License version 3.
 # See the file COPYING for more details.
@@ -32,7 +32,7 @@ class GlobalPlugin (globalPluginHandler.GlobalPlugin):
 		self.submenu_item = gui.mainFrame.sysTrayIcon.menu.InsertMenu(2, wx.ID_ANY, _('Dual &voice'), self.submenu_dualvoice)
 
 	def onAbout(self, event):
-		gui.messageBox('Version 5.2 by Seyed Mahmood Taghavi-Shahri, Iran', _('About the Dual voice add-on for NVDA'), wx.OK)
+		gui.messageBox('Version 5.3 by Seyed Mahmood Taghavi-Shahri, Iran', _('About the Dual voice add-on for NVDA'), wx.OK)
 		
 	def onCheckUpdate(self, event):
 		webbrowser.open("https://mahmood-taghavi.github.io/dual_voice/")
