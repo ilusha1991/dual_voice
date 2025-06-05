@@ -4,7 +4,7 @@ Dual voice is an addon that made possible use of two different voices (currently
 Some of the languages with the Latin writing script are English, Czech, Croatian, Dutch, Finnish, French, German, Italian, Polish, Portuguese, Slovenian, Spanish, and Turkish.
 On the other hand, some languages with the non-Latin script are Arabic, Belarusian, Bulgarian, Chinese, Greek, Hebrew, Japanese, Korean, Persian, Russian, and Ukrainian.
 
-You can download the [latest version of the Dual Voice for NVDA](https://github.com/Mahmood-Taghavi/dual_voice/releases/download/v5.0/dual_voice-5.0.nvda-addon) which requires NVDA version 2021.1. If you still use NVDA version 2020.4 please download the [previous version of Dual Voice](https://github.com/Mahmood-Taghavi/dual_voice/releases/download/v4.9/dual_voice-4.9.nvda-addon). 
+You can download the [latest version of the Dual Voice for NVDA](https://github.com/Mahmood-Taghavi/dual_voice/releases/download/v5.4/dual_voice-5.4.nvda-addon) which requires NVDA version 2021.1. If you still use NVDA version 2020.4 please download the [previous version of Dual Voice](https://github.com/Mahmood-Taghavi/dual_voice/releases/download/v4.9/dual_voice-4.9.nvda-addon). 
 
 Note 1: You can now use a custom dialog box entitled "Dual voice" in the NVDA menu to select the secondary voice and setting of the Dual voice.
 
@@ -15,3 +15,6 @@ Note 3: The latest version of NVDA which supports Windows XP and Windows Vista i
 This package is distributed under the terms of the GNU General Public License, version 2. Please see the file "COPYING.txt" for further details.
 
 Copyright © 2015-2020 Seyed Mahmood Taghavi-Shahri.
+
+## Building
+Run `scons` in the repository root to create the `.nvda-addon` package.

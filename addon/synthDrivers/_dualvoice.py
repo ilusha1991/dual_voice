@@ -10,10 +10,14 @@ from logHandler import log
 def charactertype(character):
     character.encode('utf-8')
     code = ord(character)
-    if (code ==8217 or code == 8250 or code == 8211 ):
+    if code in (39, 8217, 95):
+        charType = 'Latin'
+    elif (code ==8217 or code == 8250 or code == 8211 ):
         charType = 'symbol'     # common punctuation or number
     elif (code ==32 or code == 8203):
         charType = 'space'
+    elif 0x0400 <= code <= 0x04FF:
+        charType = 'nonLatin'
     elif (code >= 880):
         charType = 'nonLatin'
     elif (code ==33 or code ==34) or (code >= 39 and code <= 41) or (code >= 44 and code <= 46) or (code ==58 or code ==59) or (code ==63 or code ==96 or code ==171 or code ==187 or code ==8230):
