@@ -17,9 +17,11 @@ addon_info = {
 	"addon_summary" : _("Dual Voice for NVDA"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description" : _("""Read non-Latin and Latin texts using two separate voices."""),
+        "addon_description" : _("""Read Latin, Hebrew and Cyrillic texts using three separate voices."""),
 	# version
-	"addon_version" : "5.3",
+
+        "addon_version" : "5.4",
+
 	# Author(s)
 	"addon_author" : u"Seyed Mahmood Taghavi-Shahri <mahmood.taghavi@gmail.com>",
 	# URL for the add-on documentation support
