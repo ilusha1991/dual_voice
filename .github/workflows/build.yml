@@ -1,0 +1,38 @@
+name: Build and Release
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gettext
+          pip install scons markdown
+      - name: Build addon
+        run: scons
+      - name: Get addon version
+        id: vars
+        run: echo "VERSION=$(grep -Po '(?<=addon_version" : \")([^\"]+)' buildVars.py)" >> "$GITHUB_OUTPUT"
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: dual_voice-${{ steps.vars.outputs.VERSION }}
+          path: dual_voice-${{ steps.vars.outputs.VERSION }}.nvda-addon
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.vars.outputs.VERSION }}
+          name: dual_voice ${{ steps.vars.outputs.VERSION }}
+          files: dual_voice-${{ steps.vars.outputs.VERSION }}.nvda-addon
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
